@@ -1,0 +1,25 @@
+{
+  "name": "banker-algorithm-sim",
+  "version": "1.0.0",
+  "description": "银行家算法资源安全申请模拟后端（TypeScript + Node.js + 内置 SQLite）",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --import tsx --test-reporter=spec test/banker.test.ts",
+    "start": "node dist/cli.js serve",
+    "demo": "tsx src/cli.ts demo",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "banker": "dist/cli.js"
+  }
+}
